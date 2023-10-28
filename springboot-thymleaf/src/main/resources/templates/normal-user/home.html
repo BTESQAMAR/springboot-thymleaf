@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Employee Management System</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+  <!-- <div class="banner"> -->
+
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light  py-4 ">
+      <a class="navbar-brand text-primary font-weight-bold" href="#">MT-SOFTWARE SOLUTIONS</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" th:href="@{/about}">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" th:href="@{/services}">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" th:href="@{/gallary}">Our Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" th:href="@{/contact}">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-primary disabled" href="#" tabindex="-1" aria-disabled="true">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- content header -->
+  <div class="content">
+  <h1> YOUR DESIRED END'S HERE</h1>
+  <p>make your dream come true come here don't go anywhere </p>
+  <p>make your dream come true </p>
+  <button class="button"> Watch More</button>
+  <button class="button"> View More</button>
+
+  </div>
+
+ 
+
+
+
+  <!-- css part / or style part -->
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    body {
+      
+      background-image: url('https://source.unsplash.com/1200x600/?nature,water" alt="search terms">');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    
+    }
+     a{
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      
+    }
+    li{
+      list-style: none;
+      display: inline-block;
+      margin: 0 5px;
+      position: relative;
+    }
+   li::after{
+content: '';
+height: 3px; ;
+width: 0;
+background: red;
+position:absolute;
+left: 0;
+bottom: 2px;
+transition: 0.5s;
+}
+li:hover:after{
+  width: 100%;
+}
+
+/* content part */
+.content{
+  width: 100%;
+  position: absolute;
+  top : 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #ffff;
+}
+
+.content h1{
+  font-size: 50px;
+  font-weight: 100px;
+  margin-top: 80px;
+
+}
+
+/* button styling */
+.button{
+  width: 200px;
+  height: 50px;
+  padding: 15px,0;
+  text-align: center;
+  margin: 20px 10px ;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 3px solid red;
+  /* background: transparent; */
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+  </style>
+</body>
+
+</html>
