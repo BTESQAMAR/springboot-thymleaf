@@ -5,6 +5,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class UserController {
+	@GetMapping("/")
+	public String getHome() {
+		return "normal-user/home";
+	}
 	@GetMapping("/home")
 	public String getHomePage() {
 		return "normal-user/home";
@@ -27,5 +31,13 @@ public class UserController {
 	@GetMapping("/contact")
 	public String geContact() {
 		return "normal-user/contact";
+	}
+	@GetMapping("/login")
+	public String geLogin() {
+		return "normal-user/login";
+	}
+	@GetMapping("/contact_us")
+	public String getContactForm() {
+		return "normal-user/contactForm";
 	}
 }
