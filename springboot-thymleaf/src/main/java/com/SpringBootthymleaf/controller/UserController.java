@@ -28,4 +28,9 @@ public class UserController {
 	public String geContact() {
 		return "normal-user/contact";
 	}
+	@GetMapping("/contact_form")
+	public String geContactForm() {
+		return "normal-user/contact_form";
+	}
+	
 }

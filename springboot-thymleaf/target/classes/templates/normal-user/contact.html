@@ -1,4 +1,142 @@
-<div class="container">
- <div class="h1 text-center">
- <h1 class="heading"> Welcome To Contact  Page</div>
-</div>
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Add your meta tags, CSS, and other head elements here -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            /* Set the background color to a light color, change as needed */
+        }
+
+        /* Header Section Styles */
+        .header2 {
+            position: relative;
+            text-align: center;
+            color: white;
+            padding: 180px 0;
+            /* Increase the padding as needed to make the section taller */
+            background-color: #002549;
+            /* Add your desired background color for the header */
+        }
+
+        /* Footer Section Styles */
+        .footer2 {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f4f4f4;
+            /* Add your desired background color for the footer */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 400%;
+            font-family: sans-serif;
+            font-weight: 100%;
+
+        }
+
+        p {
+            font-size: 150%;
+            font-family: sans-serif;
+            font-weight: 100%;
+
+        }
+
+        .footer2 p {
+            font-size: 1.2em;
+            /* Adjust the font size of the footer text */
+            margin-bottom: 10px;
+            /* Add some space between the paragraphs */
+        }
+
+        .footer2 .mbr-section-btn {
+            margin-top: 20px;
+            /* Adjust the margin as needed to separate the button from the text */
+        }
+
+        .footer2 .btn {
+            background-image: url('c:\Users\DELL\Desktop\free-photo-of-house-in-green-deep-forest.jpeg');
+            /* Replace with the actual URL of your image */
+            background-size: cover;
+            /* Adjust as needed */
+            color: white;
+            /* Set text color to contrast with the image */
+        }
+
+        button {
+            width: 300px;
+            height: 50px;
+            padding: 15px 0;
+            /* Correct the padding syntax */
+            /* text-align: center; */
+            margin: 20px 10px;
+            border-radius: 25px;
+            /* font-weight: bold; */
+            /* border: 3px solid red; */
+            /* background-color: red; */
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        span {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 130%;
+            font-family: sans-serif;
+            font-weight: 100%;
+            color: black;
+            font-weight: bold;
+
+        }
+
+        /* Additional Styles as needed */
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <section data-bs-version="5.1" class="header2 cid-sREUnpz3LS" id="header2-d">
+        <div class="mbr-overlay" style="opacity: 0.9; background-color: rgb(32, 0, 73);"></div>
+        <div class="align-center container mb-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-text col-lg-12">
+                    <p class="mbr-text label-text mbr-fonts-style mb-0 display-4"><strong>GET IN TOUCH</strong></p>
+                    <h1 class="mbr-section-title mbr-fonts-style mb-0 display-1"><strong>Get Your Right Solution,
+                            Contact <br>Now With Us.</strong></h1>
+
+                    <div class="mbr-section-btn mt-3">
+                        <button><a class="btn btn-white display-5"th:href="@{/contact_us}"><span>Contact
+                                    Us</span></a></button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section data-bs-version="5.1" class="footer2 cid-sREVaR5qzJ" once="footers" id="footer2-e">
+        <div class="container">
+            <div class="media-container-row align-center mbr-white">
+                <div class="col-12">
+                    <p class="mbr-text mb-0 mbr-fonts-style display-7">
+                        © Copyright 2025 Mobirise - All Rights Reserved
+                    </p>
+                    <div class="mbr-section-btn mt-3"><a class="btn btn-white display-5"
+                            href="https://mobiri.se">Contact Us</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
